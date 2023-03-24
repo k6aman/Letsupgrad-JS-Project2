@@ -2,17 +2,18 @@
 
 <!DOCTYPE html>
 <html>
-
-<body>
-    <p><b>To view Today's Date click on "Get Date" button below:</b></p>
-    <button onclick="myFunction()">Get Date</button>
-    <p id="test"></p>
-    <script>
-        function myFunction() {
-           var date = new Date();
-           var n = date.getDate();
-           document.getElementById("test").innerHTML = n;
+<head>
+    <title>Current date and time:</title>
+    <h1 style="color:blueviolet;"><b><center><font30>Click on below button to display date and time:</font30></center></b></h1>
+    <script type="text/javascript">
+        function show_now() {
+            var my_time = new Date();
+            document.getElementById('display').innerHTML = my_time
         }
-     </script>
+    </script>
+</head>
+<body>
+    <center><input type=button style="font-size:100%;" value="Show Time" onclick="show_now();"></center>
+    <center><div id=display style="font-size:200%;"></div></center>
 </body>
 </html>
