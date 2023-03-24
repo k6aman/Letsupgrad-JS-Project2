@@ -1,0 +1,18 @@
+<!-- Make a page in html with a button on clicking which current date and time is displayed. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p><b>To view Today's Date click on "Get Date" button below:</b></p>
+    <button onclick="myFunction()">Get Date</button>
+    <p id="test"></p>
+    <script>
+        function myFunction() {
+           var date = new Date();
+           var n = date.getDate();
+           document.getElementById("test").innerHTML = n;
+        }
+     </script>
+</body>
+</html>
